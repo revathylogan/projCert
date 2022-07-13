@@ -15,8 +15,7 @@ RUN apt-get install -y php7.0 libapache2-mod-php7.0 php7.0-cli php7.0-common php
 COPY website /var/www/html/
 
 #Open port 3000
-EXPOSE 
-  - 3000:3000
+EXPOSE 3000:3000
 
 #Start Apache service
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
